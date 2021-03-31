@@ -1,6 +1,7 @@
 runtime: python37
 api_version: 1
 threadsafe: true
+entrypoint: gunicorn -p :8080 main:app
 
 handlers:
 - url: /static
